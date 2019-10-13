@@ -1,0 +1,146 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header, footer {
+  height: 5%;
+  width: 100%;
+}
+
+#sidebar {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 15%;
+  min-width: 170px;
+  top: 0%;
+  left: 0%;
+  z-index: 10;
+  outline: 9999px solid rgba(0, 0, 0, 0.5);
+}
+
+/*#overlay { cursor:pointer; }*/
+
+#page {
+  max-width: 1440px;
+  max-height: 900px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#prof {
+  text-align: center;
+}
+
+#profilepic {
+  height: auto;
+  width: 100%;
+  border: 2px solid;
+}
+
+#links {
+  text-align: center;
+}
+
+#mylinks {
+  display: inline-block;
+  width: auto;
+  margin: auto;
+}
+
+#contact {
+  display: none;
+  position: fixed;
+  height: 50%;
+  width: 70%;
+  min-width: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -10%;
+  /*set to a negative number 1/2 of height*/
+  margin-left: -35%;
+  /*set to a negative number 1/2 of width*/
+  border: 1px solid black;
+  z-index: 10;
+  /* keep on top of other elements on the page */
+  outline: 9999px solid rgba(0, 0, 0, 0.5);
+}
+
+#timeline {
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+  border: 1px solid grey;
+}
+
+#prev_career {
+  display: none;
+}
+
+#prev_projects {
+  display: none;
+}
+
+.show {
+  cursor: pointer;
+}
+
+.zoomable:hover {
+  transform: scale(1.5);
+}
+
+#ending {
+  text-align: center;
+}
+
+#time {
+  font-weight: bold;
+}
+
+.badge {
+  width: 30%;
+  min-width: 200px;
+  height: 30%;
+  min-height: 200px;
+  text-align: center;
+}
+
+.tbadge {
+  width: 30%;
+  min-width: 200px;
+  height: 30%;
+  min-height: 200px;
+  text-align: center;
+  display: table;
+}
+
+.tbadge-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    position: absolute;
+    z-index: 10;
+}
+
+#links-m, #mylinks-m {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+    #links-m {
+        display: inline-block;
+    }
+    #links {
+        display: none;
+    }
+}
